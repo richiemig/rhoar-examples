@@ -58,7 +58,7 @@ public class ProductEndpoint {
     }
 
     private int dumbGetQuantity(String itemId) {
-        String url = "http://inventory:8080/api/inventory/" + itemId;
+        String url = "http://bbvanodejs:8080/api/inventory/" + itemId;
         try {
             AsyncInvoker request = ClientBuilder.newClient().target(url).request().async();
             return request.get(new GenericType<Inventory>() {
