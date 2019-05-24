@@ -36,7 +36,7 @@ app.use('/api/inventory/:itemId', (request, response) => {
 
   return response.send({
     itemId: itemId,
-    location: 'Idaho',
+    location: 'Idahoooo',
     quantity: 337,
     link: 'http://google.com/idaho'
   });
